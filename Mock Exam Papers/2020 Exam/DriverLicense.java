@@ -1,10 +1,9 @@
-public class DriverLicense implements Card{
+public class DriverLicense extends Card{
 
     private int expirationYear;
 
     public expirationYear(String name, int pinNumber, int number, int expirationYear){
         super(name, pinNumber, number);
-
         this.expirationYear = expirationYear;
     }
 
