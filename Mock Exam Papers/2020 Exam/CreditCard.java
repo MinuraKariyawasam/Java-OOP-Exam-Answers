@@ -9,20 +9,20 @@ public class CreditCard implements Card{
         this.number = number;
     }
 
-    private int getPinNumber(){
+    public int getPinNumber(){
         return pinNumber;
     }
 
-    private void setPinNumber(int pinNumber){
+    public void setPinNumber(int pinNumber){
         this.pinNumber = pinNumber;
     }
 
-    private int getNumber(){
+    public int getNumber(){
         return number;
     }
 
     
-    private void setNumber(int number){
+    public void setNumber(int number){
         this.number = number;
     }
 
