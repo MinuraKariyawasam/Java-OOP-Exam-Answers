@@ -1,13 +1,14 @@
 class DemoOutput{
     
-    synchronized public void sayHi(String msg){
+     public void sayHi(String msg){
+         
         System.out.println("Start " + msg);
-        try{
-          Thread.sleep(1000);
-        }
-        catch(InterruptedException e){
-          e.printStackTrace();
-        }
+        // try{
+        //   Thread.sleep(1000);
+        // }
+        // catch(InterruptedException e){
+        //   e.printStackTrace();
+        // }
 
         System.out.println("End " + msg);
 
@@ -28,7 +29,9 @@ class accessClass extends Thread{
     }
 
     public void run(){
-        demoClass.sayHi(name);
+        synchronized(demoClass){
+            demoClass.sayHi(name);
+        }
     }
 }
 
